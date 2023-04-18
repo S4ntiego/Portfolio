@@ -1,5 +1,10 @@
 .container {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
-  background-color: blue;
+  display: flex;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, var(--gray-500), var(--gray-300));
+  position: relative;
+  margin-top: 0.1rem;
+  padding: 5rem;
 }

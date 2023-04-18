@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --gray-500: #2d3034;
+  --gray-400: #282b2f;
+  --gray-300: #33363b;
+  --gray-200: #3a3b40;
+  --gray-100: #9d9d9d;
+  --cream: #fdeade;
+  --cta: #fff27a;
+  --background: #121212;
+  --cards: #181818;
+  --cardsText: #ffffff;
+  --paragraph: #86939f;
+}
+
 html,
 body {
   width: 100%;
@@ -9,4 +23,32 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: var(--background);
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }

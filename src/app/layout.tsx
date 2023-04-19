@@ -1,10 +1,15 @@
 import "./globals.css";
 import { Space_Grotesk } from "next/font/google";
+import { Familjen_Grotesk } from "next/font/google";
 
-// If loading a variable font, you don't need to specify the font weight
 const space = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
+});
+
+const familjen = Familjen_Grotesk({
+  subsets: ["latin"],
+  variable: "--familjen-font",
 });
 
 export const metadata = {
@@ -18,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html className={familjen.variable} lang="en">
       <body>{children}</body>
     </html>
   );

@@ -1,0 +1,47 @@
+.navbarContainer {
+  height: 6rem;
+  justify-content: space-between;
+  border-bottom: 1px var(--paragraph) solid;
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+  padding: 3rem;
+  z-index: 20;
+}
+
+.leftContainer {
+  display: flex;
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolioDescription {
+  font-size: 0.6rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--paragraph);
+  line-height: 1;
+}
+
+.name {
+  text-transform: uppercase;
+  color: var(--heading);
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 2em;
+  text-align: left;
+}
+
+.rightContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigationLink {
+  color: #ffffff;
+  font-family: var(--familjen-font);
+}

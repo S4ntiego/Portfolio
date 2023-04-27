@@ -3,17 +3,22 @@
   width: 100%;
   display: flex;
   position: relative;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .flexContainer {
   display: flex;
   flex-direction: column;
+  gap: 8rem;
   width: 100%;
+  padding: 3rem;
 }
 
 .headingContainer {
   display: flex;
   flex-direction: column;
+  gap: 0.7rem;
 }
 
 .introContainer {
@@ -22,20 +27,32 @@
   gap: 0.5rem;
 }
 
-.introHeading {
-  color: var(--cardsText);
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.2;
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
 
-.introParagraph {
+.mainSkillsHeading {
+  font-size: 2.5rem;
+  color: var(--heading);
+  font-weight: 700;
+  line-height: 1.2em;
+  width: 600px;
+  letter-spacing: -1px;
+}
+
+.mainSkillsParagraph {
   color: var(--paragraph);
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  width: 700px;
   text-align: justify;
 }
 
 .skillsUpperParagraph {
-  color: var(--paragraph);
+  color: var(--heading);
   text-transform: uppercase;
   letter-spacing: 1rem;
   font-size: 0.875rem;
@@ -43,22 +60,27 @@
 }
 
 .heading {
-  font-size: 3rem;
-  color: var(--cardsText);
-  font-family: var(--familjen-font);
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: var(--heading);
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -2px;
 }
 
 .skillsBottomParagraph {
   color: var(--paragraph);
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-align: justify;
+  width: 600px;
 }
 
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   margin-top: 1rem;
-  grid-gap: 1px;
+  gap: 1px;
 }
 
 .skillContainer {
@@ -66,7 +88,7 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  outline: solid 1px var(--paragraph);
+  outline: solid 0.25px var(--paragraph);
 }
 
 .skillImageContainer {
@@ -106,6 +128,6 @@
 }
 
 .skillName {
-  color: var(--cardsText);
+  color: var(--heading);
   font-size: 1.125rem;
 }

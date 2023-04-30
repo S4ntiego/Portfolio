@@ -1,11 +1,8 @@
-.mainContainer {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
 .mainFlexContainer {
   display: flex;
   padding: 3rem;
 }
+
 .flexLeftContainer {
   display: flex;
   flex-direction: column;
@@ -35,9 +32,6 @@
   display: flex;
   gap: 1rem;
   color: var(--heading);
-}
-
-.flexRightContainer {
 }
 
 .landingSecondaryHeadingContainer {

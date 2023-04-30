@@ -1,0 +1,215 @@
+.mainContainer {
+  padding: 6rem 3rem 6rem 3rem;
+  height: min-content;
+  width: 100%;
+  position: relative;
+  gap: 10px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mainProjectsHeading {
+  font-size: 2.5rem;
+  color: var(--heading);
+  font-weight: 700;
+  line-height: 1.2em;
+  width: 600px;
+  letter-spacing: -1px;
+}
+
+.mainProjectsParagraph {
+  color: var(--paragraph);
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  width: 700px;
+  text-align: justify;
+}
+
+.projectContainer {
+  display: flex;
+  gap: 3rem;
+  position: relative;
+  flex: none;
+  align-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: min-content;
+  justify-content: center;
+  width: 100%;
+}
+
+.projectLeftContainer {
+  aspect-ratio: 1200/800;
+  flex-basis: 50%;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.projectRightContainer {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex-basis: 50%;
+}
+
+.projectName {
+  font-size: 2.5rem;
+  color: var(--heading);
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -2px;
+}
+
+.projectDescription {
+  color: var(--paragraph);
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-align: justify;
+  width: 400px;
+}
+
+.projectButton {
+  display: flex;
+  padding: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  min-width: 7rem;
+  background-color: var(--heading);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.buttonText {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--background);
+}
+
+.projectAlternativeButton {
+  display: flex;
+  padding: 1rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  min-width: 9rem;
+  border: 0.25px solid var(--heading);
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--heading);
+}
+
+.alternativeButtonText {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--heading);
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 1rem;
+  color: var(--heading);
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.projectImagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  outline: 0.25px solid var(--paragraph);
+  border-radius: 1.25rem;
+}
+
+.projectImageContainer {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+
+.projectImage {
+  object-fit: cover;
+  &:hover {
+    scale: 120%;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  border-radius: 1.25rem;
+  padding: 2rem 0 2rem 0;
+  max-width: 450px;
+}
+
+.skillImage {
+  display: flex;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  filter: brightness(0) saturate(100%) invert(61%) sepia(8%) saturate(520%)
+    hue-rotate(167deg) brightness(92%) contrast(90%);
+}
+
+.projectDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.25rem;
+}
+
+.projectDescriptionHeader {
+  font-size: 2.5rem;
+  color: var(--heading);
+  font-weight: 700;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+}
+
+.projectDescriptionParagraph {
+  color: var(--paragraph);
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-align: justify;
+  max-width: 450px;
+}

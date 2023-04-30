@@ -1,36 +1,17 @@
-.container {
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  position: relative;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .flexContainer {
   display: flex;
   flex-direction: column;
   gap: 8rem;
   width: 100%;
   padding: 3rem;
+  padding-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .headingContainer {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
-}
-
-.introContainer {
-  display: flex;
-  flex-direction: column;
   gap: 0.5rem;
-}
-
-.sectionContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
 }
 
 .mainSkillsHeading {
@@ -42,6 +23,12 @@
   letter-spacing: -1px;
 }
 
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
 .mainSkillsParagraph {
   color: var(--paragraph);
   font-size: 1.25rem;
@@ -51,15 +38,13 @@
   text-align: justify;
 }
 
-.skillsUpperParagraph {
-  color: var(--heading);
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  font-size: 0.875rem;
-  line-height: 1rem;
+.sectionHeadingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.heading {
+.sectionHeading {
   font-size: 2.5rem;
   color: var(--heading);
   font-weight: 500;
@@ -67,7 +52,7 @@
   letter-spacing: -2px;
 }
 
-.skillsBottomParagraph {
+.sectionParagraph {
   color: var(--paragraph);
   font-size: 1.25rem;
   font-weight: 400;
@@ -80,7 +65,7 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   margin-top: 1rem;
-  gap: 1px;
+  gap: 0.8rem;
 }
 
 .skillContainer {
@@ -89,6 +74,7 @@
   gap: 2rem;
   padding: 2rem;
   outline: solid 0.25px var(--paragraph);
+  border-radius: 1.25rem;
 }
 
 .skillImageContainer {

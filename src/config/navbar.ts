@@ -6,7 +6,7 @@ export type navbarItem = {
 export type navbarConfig = navbarItem[];
 
 export const navbarConfig: navbarConfig = [
-  { title: "Projects", href: "#projects" },
   { title: "Stack", href: "#skills" },
+  { title: "Projects", href: "#projects" },
   { title: "Contact", href: "#contact" },
 ];

@@ -21,7 +21,7 @@ const sortedSkills = skills.sort((a, b) => {
 
 const Skills = () => {
   return (
-    <div id="#skills" className={styles.flexContainer}>
+    <div id="skills" className={styles.flexContainer}>
       <div className={styles.headingContainer}>
         <h2 className={styles.mainSkillsHeading}>Programming Stack</h2>
         <p className={styles.mainSkillsParagraph}>
@@ -31,11 +31,13 @@ const Skills = () => {
         </p>
       </div>
       <div className={styles.sectionContainer}>
-        <h2 className={styles.heading}>Technologies</h2>
-        <p className={styles.skillsBottomParagraph}>
-          I am capable of creating full-stack JavaScript applications that
-          involve TypeScript. Always learning and open to new solutions.
-        </p>
+        <div className={styles.sectionHeadingContainer}>
+          <h2 className={styles.sectionHeading}>Technologies</h2>
+          <p className={styles.sectionParagraph}>
+            I am capable of creating full-stack JavaScript applications that
+            involve TypeScript. Always learning and open to new solutions.
+          </p>
+        </div>
         <div className={styles.gridContainer}>
           {sortedSkills.map((skill) => (
             <div className={styles.skillContainer}>
@@ -61,9 +63,9 @@ const Skills = () => {
       </div>
 
       <div className={styles.sectionContainer}>
-        <div className={styles.headingContainer}>
-          <h2 className={styles.heading}>Software</h2>
-          <p className={styles.skillsBottomParagraph}>
+        <div className={styles.sectionHeadingContainer}>
+          <h2 className={styles.sectionHeading}>Software</h2>
+          <p className={styles.sectionParagraph}>
             While exploring UI and UX aspects of the web, I got familiar with
             one of the most popular design tools in the industry - Figma and
             Adobe Photoshop. With my Investment Banking experience, I am also
@@ -94,9 +96,9 @@ const Skills = () => {
         </div>
       </div>
       <div className={styles.sectionContainer}>
-        <div className={styles.headingContainer}>
-          <h2 className={styles.heading}>Services</h2>
-          <p className={styles.skillsBottomParagraph}>
+        <div className={styles.sectionHeadingContainer}>
+          <h2 className={styles.sectionHeading}>Services</h2>
+          <p className={styles.sectionParagraph}>
             Vercel for hosting Next.js websites, Amazon AWS S3 due to the
             well-documented API, lambda functions, and competitive pricing, and
             Amazon Cloudfront CDN to benefit from caching and closer
@@ -127,9 +129,9 @@ const Skills = () => {
         </div>
       </div>
       <div className={styles.sectionContainer}>
-        <div className={styles.headingContainer}>
-          <h2 className={styles.heading}>Additional Libraries</h2>
-          <p className={styles.skillsBottomParagraph}>
+        <div className={styles.sectionHeadingContainer}>
+          <h2 className={styles.sectionHeading}>Additional Libraries</h2>
+          <p className={styles.sectionParagraph}>
             To gain a smoother developer and user experience, I am using
             external libraries that are widely recognized and appreciated by the
             npm community. My knowledge of testing using Jest library is at a

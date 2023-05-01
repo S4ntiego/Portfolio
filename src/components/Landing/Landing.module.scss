@@ -1,6 +1,9 @@
 .mainFlexContainer {
   display: flex;
   padding: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flexLeftContainer {

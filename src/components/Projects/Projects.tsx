@@ -298,7 +298,7 @@ const Projects = () => {
             </div>
             <div className={styles.projectImageContainer}>
               <Image
-                src={`/natours.png`}
+                src={`/natours_landing.png`}
                 className={styles.projectImage}
                 alt={"liguify"}
                 fill
@@ -308,9 +308,9 @@ const Projects = () => {
           <div className={styles.projectContainer}>
             <div className={styles.projectImageContainer}>
               <Image
-                src={`/trillo_main.png`}
+                src={`/trillo.png`}
                 className={styles.projectImage}
-                alt={"quizander"}
+                alt={"trillo"}
                 fill
               />
             </div>

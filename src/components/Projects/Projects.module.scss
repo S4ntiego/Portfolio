@@ -1,5 +1,4 @@
 .mainContainer {
-  padding: 8rem 3rem 8rem 3rem;
   height: min-content;
   width: 100%;
   position: relative;
@@ -11,6 +10,9 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 3rem;
+  padding-bottom: 0;
+  padding-top: 8rem;
 }
 
 .flexContainer {
@@ -24,25 +26,34 @@
 .headingContainer {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
-.mainProjectsHeading {
-  font-size: 2.5rem;
+.mainHeadingContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.mainHeader {
+  font-size: 6rem;
   color: var(--heading);
   font-weight: 700;
-  line-height: 1.2em;
-  width: 600px;
+  line-height: 0.9em;
+  max-width: 600px;
   letter-spacing: -1px;
+  font-family: var(--fam-font);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
-.mainProjectsParagraph {
-  color: var(--paragraph);
-  font-size: 1.25rem;
+.mainParagraph {
+  color: var(--blue);
+  font-size: 0.875rem;
   font-weight: 400;
-  letter-spacing: -0.5px;
-  width: 700px;
+  letter-spacing: 2px;
+  max-width: 700px;
   text-align: justify;
+  text-transform: uppercase;
 }
 
 .projectContainer {
@@ -62,7 +73,7 @@
   aspect-ratio: 1200/800;
   flex-basis: 50%;
   position: relative;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
 }
 
 .projectRightContainer {
@@ -93,14 +104,24 @@
 .projectButton {
   display: flex;
   padding: 1rem;
-  height: 1rem;
-  border-radius: 0.5rem;
+  height: 3rem;
+  border-radius: 1.25rem;
   justify-content: center;
   align-items: center;
-  min-width: 7rem;
+  min-width: 9rem;
   background-color: var(--heading);
   white-space: nowrap;
   cursor: pointer;
+
+  &:hover {
+    border: 0.25px solid var(--heading);
+    background-color: var(--background);
+    color: var(--heading);
+  }
+
+  &:hover .buttonText {
+    color: var(--heading);
+  }
 }
 
 .buttonText {
@@ -114,7 +135,7 @@
   display: flex;
   padding: 1rem;
   height: 3rem;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
   justify-content: center;
   align-items: center;
   min-width: 9rem;
@@ -125,6 +146,12 @@
   font-weight: 600;
   text-align: center;
   color: var(--heading);
+
+  &:hover {
+    background-color: var(--heading);
+    border: none;
+    color: var(--background);
+  }
 }
 
 .alternativeButtonText {
@@ -188,7 +215,6 @@
   align-items: center;
   position: relative;
   padding: 0.2rem;
-  border-radius: 0.5rem;
   filter: brightness(0) saturate(100%) invert(61%) sepia(8%) saturate(520%)
     hue-rotate(167deg) brightness(92%) contrast(90%);
 }

@@ -77,7 +77,7 @@
 
 .navigation {
   display: flex;
-  gap: 1.5rem;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -88,12 +88,23 @@
   align-items: center;
   position: relative;
   padding: 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
   filter: brightness(0) saturate(100%) invert(61%) sepia(8%) saturate(520%)
     hue-rotate(167deg) brightness(92%) contrast(90%);
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7476%)
+      hue-rotate(110deg) brightness(98%) contrast(108%);
+  }
 }
 
 .navigationLink {
-  color: #ffffff;
+  color: var(--heading);
   font-family: var(--familjen-font);
+  padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+
+  &:hover {
+    background-color: var(--paragraph);
+    border-radius: 1.25rem;
+  }
 }

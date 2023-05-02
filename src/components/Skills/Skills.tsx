@@ -22,13 +22,11 @@ const sortedSkills = skills.sort((a, b) => {
 const Skills = () => {
   return (
     <div id="skills" className={styles.flexContainer}>
-      <div className={styles.headingContainer}>
-        <h2 className={styles.mainSkillsHeading}>Programming Stack</h2>
-        <p className={styles.mainSkillsParagraph}>
-          Technologies that I have used over the years to build my side
-          projects. <br /> I have also created simple applications using Python,
-          Django, and Pandas.
+      <div className={styles.mainHeadingContainer}>
+        <p className={styles.mainParagraph}>
+          Always flexible. Constantly learning.
         </p>
+        <h2 className={styles.mainHeader}>Programming Stack</h2>
       </div>
       <div className={styles.sectionContainer}>
         <div className={styles.sectionHeadingContainer}>

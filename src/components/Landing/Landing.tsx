@@ -17,8 +17,8 @@ const Landing = () => {
             <p className={styles.landingSecondaryHeadingText}>Cześć.</p>
           </div>
           <h1 className={styles.landingPrimaryHeading}>
-            My name is Adam Książek, I'm a full-stack JavaScript developer able
-            to work all around the world.
+            My name is <span className={styles.name}>Adam Książek</span>, I'm a
+            full-stack JavaScript developer able to work all around the world.
           </h1>
           <p className={styles.landingParagraph1}>
             I was born in Poland and studied finance at the University of Warsaw

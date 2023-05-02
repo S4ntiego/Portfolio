@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.3",
+    "@sendgrid/client": "^7.7.0",
+    "@sendgrid/mail": "^7.7.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",

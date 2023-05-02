@@ -10,7 +10,7 @@ const inter = Inter({
 
 const familjen = Familjen_Grotesk({
   subsets: ["latin"],
-  variable: "--familjen-font",
+  variable: "--fam-font",
 });
 
 export const metadata = {

@@ -1,14 +1,20 @@
+@import "../../lib/mixins";
+
 .outerContainer {
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px var(--paragraph) solid;
+  border-bottom: 1px var(--border) solid;
   height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--background);
+
+  @include respond(phone) {
+    height: 4rem;
+  }
 }
 
 .navbarContainer {
@@ -20,20 +26,37 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
 
-.leftContainer {
-  display: flex;
+  @include respond(phone) {
+    padding: 1.5rem;
+  }
 }
 
 .logo {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover .logoIcon {
+    filter: invert(25%) sepia(84%) saturate(4008%) hue-rotate(209deg)
+      brightness(100%) contrast(102%);
+  }
+}
+
+.logoIcon {
+  margin-right: 0.5rem;
+  filter: invert(100%) sepia(35%) saturate(2%) hue-rotate(47deg)
+    brightness(111%) contrast(101%);
+}
+
+.logoText {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .logoContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -51,7 +74,7 @@
   color: var(--paragraph);
   font-weight: 400;
   letter-spacing: 1.2px;
-  line-height: 1em;
+  line-height: 1.2em;
   text-align: left;
 }
 
@@ -60,7 +83,7 @@
   color: var(--heading);
   font-weight: 800;
   letter-spacing: 1px;
-  line-height: 2em;
+  line-height: 1em;
   text-align: left;
 }
 
@@ -99,12 +122,16 @@
 }
 
 .navigationLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--heading);
   font-family: var(--familjen-font);
-  padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+  padding: 0 0.8rem;
+  height: 2.5rem;
 
   &:hover {
-    background-color: var(--paragraph);
-    border-radius: 1.25rem;
+    background-color: var(--border);
+    border-radius: 0.5rem;
   }
 }

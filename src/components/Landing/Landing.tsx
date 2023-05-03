@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Landing.module.scss";
+import Image from "next/image";
 
 const Landing = () => {
   return (
@@ -32,13 +33,42 @@ const Landing = () => {
             AWS, but I am very flexible - constantly learning and looking for
             the most efficient solutions.
           </p>
-          <div className={styles.buttonsContainer}>
-            <button className={styles.landingButton1}>Instagram</button>
-            <button className={styles.landingButton2}>Twitter</button>
-            <button className={styles.landingButton3}>Mail</button>
+          <div className={styles.linksContainer}>
+            <a
+              href="https://www.linkedin.com/in/adam-ksi%C4%85%C5%BCek-6538141a1/"
+              className={styles.linkAnchor}
+            >
+              <span className={styles.linkText}>LinkedIn</span>
+            </a>
+            <a href="https://github.com/S4ntiego" className={styles.linkAnchor}>
+              <span className={styles.linkText}>GitHub</span>
+            </a>
           </div>
         </div>
-        <div className={styles.flexRightContainer}></div>
+        <div className={styles.flexRightContainer}>
+          <div className={styles.imageContainer}>
+            <Image
+              src={`/icons/cv.svg`}
+              fill
+              className={styles.cvImage}
+              alt={"cv"}
+            />
+          </div>
+          <a
+            href="/Adam-Ksiazek-CV.pdf"
+            download
+            className={styles.downloadButton}
+          >
+            <Image
+              src={`/icons/download.svg`}
+              height={20}
+              width={20}
+              className={styles.downloadIcon}
+              alt={"download"}
+            />
+            <p className={styles.buttonText}>Download CV</p>
+          </a>
+        </div>
       </div>
     </div>
   );

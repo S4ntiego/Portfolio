@@ -8,12 +8,19 @@ const Navbar = () => {
     <div className={styles.outerContainer}>
       <div className={styles.navbarContainer}>
         <div className={styles.leftContainer}>
-          <div className={styles.logoContainer}>
-            <a href="#" className={styles.logo}>
+          <a href="#" className={styles.logo}>
+            <Image
+              src={`/icons/book.svg`}
+              height="50"
+              width="50"
+              className={styles.logoIcon}
+              alt={"logo"}
+            />
+            <h3 className={styles.logoText}>
               <span className={styles.logoTop}>Portfolio</span>
               <span className={styles.logoBottom}>Adam Ksiazek</span>
-            </a>
-          </div>
+            </h3>
+          </a>
         </div>
         <div className={styles.rightContainer}>
           <div className={styles.icons}>

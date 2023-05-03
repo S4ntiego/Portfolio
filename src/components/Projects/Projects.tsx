@@ -13,12 +13,14 @@ const Projects = () => {
         <div className={styles.projectsContainer}>
           <div className={styles.projectContainer}>
             <div className={styles.projectImageContainer}>
-              <Image
-                src={`/quizander_landing.png`}
-                className={styles.projectImage}
-                alt={"quizander"}
-                fill
-              />
+              <a href="https://quizander-dqzb.vercel.app/">
+                <Image
+                  src={`/quizander_landing.png`}
+                  className={styles.projectImage}
+                  alt={"quizander"}
+                  fill
+                />
+              </a>
             </div>
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Quizander</h3>
@@ -82,14 +84,11 @@ const Projects = () => {
                 />
               </div>
               <div className={styles.buttonsContainer}>
-                <button className={styles.projectButton}>
-                  <p className={styles.buttonText}>Read More</p>
-                </button>
                 <a
                   href="https://quizander-dqzb.vercel.app/"
-                  className={styles.projectAlternativeButton}
+                  className={styles.projectButton}
                 >
-                  Live
+                  <span className={styles.buttonText}>Live</span>
                 </a>
                 <a
                   href="https://github.com/S4ntiego/Quizander"
@@ -105,7 +104,10 @@ const Projects = () => {
               <h3 className={styles.projectDescriptionHeader}>Liguify</h3>
               <p className={styles.projectDescriptionParagraph}>
                 Full-stack website with Teamfight Tactics statistics based on my
-                own analysis of data gathered from Riot Games API.
+                own analysis of data gathered from Riot Games API. Live version
+                is not available, as the project was prepared during the
+                Dragonlands set. Nevertheless, GitHub repository contains almost
+                all the queries, tables, frontend and backend code.
               </p>
               <p className={styles.projectDescriptionParagraph}>
                 Complex SQL queries and table relationships, Knex builder,
@@ -165,9 +167,6 @@ const Projects = () => {
                 />
               </div>
               <div className={styles.buttonsContainer}>
-                <button className={styles.projectButton}>
-                  <p className={styles.buttonText}>Read More</p>
-                </button>
                 <a
                   href="https://github.com/S4ntiego/Quizander"
                   className={styles.projectAlternativeButton}
@@ -186,19 +185,22 @@ const Projects = () => {
             </div>
           </div>
           <div className={styles.projectContainer}>
-            <div className={styles.projectImageContainer}>
+            <a
+              href="https://github.com/S4ntiego/Portfolio"
+              className={styles.projectImageContainer}
+            >
               <Image
                 src={`/quizander_landing.png`}
                 className={styles.projectImage}
                 alt={"quizander"}
                 fill
               />
-            </div>
+            </a>
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Portfolio</h3>
               <p className={styles.projectDescriptionParagraph}>
-                Simple portfolio website made with Next.js, SCSS, and CSS
-                modules.
+                Simple portfolio website made with Next.js, TypeScript, SCSS,
+                and CSS modules.
               </p>
               <div className={styles.gridContainer}>
                 <Image
@@ -231,11 +233,8 @@ const Projects = () => {
                 />
               </div>
               <div className={styles.buttonsContainer}>
-                <button className={styles.projectButton}>
-                  <p className={styles.buttonText}>Read More</p>
-                </button>
                 <a
-                  href="https://github.com/S4ntiego/Quizander"
+                  href="https://github.com/S4ntiego/Portfolio"
                   className={styles.projectAlternativeButton}
                 >
                   GitHub Repo

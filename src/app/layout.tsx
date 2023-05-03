@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar/Navbar";
-import "./globals.css";
+import "./globals.scss";
 import { Inter } from "next/font/google";
 import { Familjen_Grotesk } from "next/font/google";
 

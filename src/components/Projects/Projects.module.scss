@@ -1,8 +1,9 @@
+@import "../../lib/mixins";
+
 .mainContainer {
   height: min-content;
   width: 100%;
   position: relative;
-  gap: 10px;
   display: flex;
   align-content: center;
   align-items: center;
@@ -13,12 +14,19 @@
   padding: 3rem;
   padding-bottom: 0;
   padding-top: 8rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    padding: 1.5rem;
+    padding-top: 7rem;
+    gap: 3rem;
+  }
 }
 
 .flexContainer {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
   width: 100%;
   position: relative;
 }
@@ -31,7 +39,6 @@
 .mainHeadingContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
 }
 
 .mainHeader {
@@ -44,6 +51,11 @@
   font-family: var(--fam-font);
   text-transform: uppercase;
   margin-bottom: 1rem;
+
+  @include respond(phone) {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
 }
 
 .mainParagraph {
@@ -54,11 +66,15 @@
   max-width: 700px;
   text-align: justify;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 0.7rem;
+  }
 }
 
 .projectContainer {
-  display: flex;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   position: relative;
   flex: none;
   align-content: center;
@@ -67,38 +83,21 @@
   height: min-content;
   justify-content: center;
   width: 100%;
-}
-
-.projectLeftContainer {
-  aspect-ratio: 1200/800;
-  flex-basis: 50%;
-  position: relative;
+  outline: solid 1px var(--border);
   border-radius: 1.25rem;
-}
+  padding: 2rem;
 
-.projectRightContainer {
-  display: flex;
-  flex-shrink: 1;
-  flex-direction: column;
-  gap: 1.25rem;
-  flex-basis: 50%;
-}
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    outline: none;
+    gap: 1rem;
 
-.projectName {
-  font-size: 2.5rem;
-  color: var(--heading);
-  font-weight: 500;
-  line-height: 1.2em;
-  letter-spacing: -2px;
-}
-
-.projectDescription {
-  color: var(--paragraph);
-  font-size: 1.25rem;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  text-align: justify;
-  width: 400px;
+    &:nth-of-type(even) {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .projectButton {
@@ -114,13 +113,17 @@
   cursor: pointer;
 
   &:hover {
-    border: 0.25px solid var(--heading);
+    border: 1px solid var(--border);
     background-color: var(--background);
     color: var(--heading);
   }
 
   &:hover .buttonText {
     color: var(--heading);
+  }
+
+  @include respond(phone) {
+    width: 50%;
   }
 }
 
@@ -139,7 +142,7 @@
   justify-content: center;
   align-items: center;
   min-width: 9rem;
-  border: 0.25px solid var(--heading);
+  border: 1px solid var(--border);
   white-space: nowrap;
   cursor: pointer;
   font-size: 0.875rem;
@@ -151,6 +154,10 @@
     background-color: var(--heading);
     border: none;
     color: var(--background);
+  }
+
+  @include respond(phone) {
+    width: 50%;
   }
 }
 
@@ -173,16 +180,11 @@
   gap: 5rem;
 }
 
-.projectContainer {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .projectImagesContainer {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  outline: 0.25px solid var(--paragraph);
+  outline: 1px solid var(--border);
   border-radius: 1.25rem;
 }
 
@@ -191,12 +193,22 @@
   aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 1.25rem;
+
+  @include respond(phone) {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
+    outline: 1px solid var(--border);
+  }
 }
 
 .projectImage {
   object-fit: cover;
+  cursor: pointer;
   &:hover {
-    scale: 120%;
+    border: 1px solid var(--blue);
+    padding: 1rem;
+    border-radius: 1.25rem;
   }
 }
 
@@ -206,6 +218,11 @@
   border-radius: 1.25rem;
   padding: 2rem 0 2rem 0;
   max-width: 450px;
+
+  @include respond(phone) {
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
 }
 
 .skillImage {
@@ -224,11 +241,16 @@
   flex-direction: column;
   flex: 1;
   gap: 1.25rem;
+
+  @include respond(phone) {
+    gap: 1rem;
+  }
 }
 
 .projectDescriptionHeader {
   font-size: 2.5rem;
   color: var(--heading);
+  font-family: var(--fam-font);
   font-weight: 700;
   line-height: 1.2em;
   letter-spacing: -1px;
@@ -241,4 +263,8 @@
   letter-spacing: -0.5px;
   text-align: justify;
   max-width: 450px;
+
+  @include respond(phone) {
+    font-size: 1rem;
+  }
 }

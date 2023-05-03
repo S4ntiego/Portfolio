@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "../lib/mixins";
 
 :root {
   --gray-500: #2d3034;
@@ -15,6 +16,7 @@
   --heading: #ffffff;
   --paragraph: #86939f;
   --blue: #0065fa;
+  --border: #2a333c;
 }
 
 html,
@@ -26,6 +28,7 @@ body {
   padding: 0;
   background-color: var(--background);
   font-family: var(--inter-font);
+  scroll-behavior: smooth;
 }
 
 .customContainer {
@@ -37,5 +40,26 @@ body {
 @media (min-width: 1200px) {
   .customContainer {
     max-width: 1200px;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      //1200px
+      @content;
+    }
   }
 }

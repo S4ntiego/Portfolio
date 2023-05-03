@@ -1,3 +1,5 @@
+@import "../../lib/mixins";
+
 .mainFlexContainer {
   display: flex;
   padding: 3rem;
@@ -6,14 +8,18 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  gap: 3rem;
+  gap: 1.5rem;
   flex-direction: column;
+
+  @include respond(phone) {
+    padding: 1.5rem;
+  }
 }
 
 .headingContainer {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.1rem;
 }
 
 .mainHeadingContainer {
@@ -24,23 +30,19 @@
 
 .headerContainer {
   display: flex;
-
   width: max-content;
   gap: 1rem;
+  text-align: center;
+  justify-content: center;
   align-items: center;
 
   &:hover .headingHeader {
     color: var(--blue);
   }
-}
 
-.headingHeader {
-  font-size: 2.5rem;
-  color: var(--heading);
-  font-weight: 700;
-  line-height: 1.2em;
-  max-width: 600px;
-  letter-spacing: -1px;
+  @include respond(phone) {
+    gap: 0.5rem;
+  }
 }
 
 .mainHeader {
@@ -52,7 +54,10 @@
   letter-spacing: -1px;
   font-family: var(--fam-font);
   text-transform: uppercase;
-  margin-bottom: 1rem;
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }
 
 .mainParagraph {
@@ -63,17 +68,38 @@
   max-width: 700px;
   text-align: justify;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 0.7rem;
+  }
 }
 
 .iconContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
 }
 
 .icon {
   filter: invert(25%) sepia(92%) saturate(1470%) hue-rotate(211deg)
     brightness(100%) contrast(97%);
+}
+
+.headingHeader {
+  font-size: 2rem;
+  color: var(--heading);
+  font-family: var(--fam-font);
+  font-weight: 400;
+  line-height: 1em;
+  max-width: 600px;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+
+  @include respond(phone) {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+  }
 }
 
 .headingParagraph {
@@ -84,6 +110,11 @@
   max-width: 700px;
   text-align: justify;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 0.6rem;
+    text-align: start;
+  }
 }
 
 .emailForm {
@@ -96,11 +127,12 @@
 .input {
   display: flex;
   width: 100%;
-  border: 0.25px solid var(--paragraph);
+  border: 1px solid var(--border);
   color: var(--heading);
   overflow: scroll;
   border-radius: 1.25rem;
   padding: 1rem;
+  height: 3rem;
   box-sizing: border-box;
   background-color: var(--background);
 }
@@ -115,7 +147,7 @@
 
 .textArea {
   background: var(--background);
-  border: 0.25px solid var(--paragraph);
+  border: 1px solid var(--border);
   color: var(--heading);
   padding: 1rem;
   min-height: 60px;
@@ -124,12 +156,17 @@
   width: 100%;
   border-radius: 1.25rem;
   border-bottom-right-radius: 2em;
+
+  @include respond(phone) {
+    font-size: 1rem;
+    height: 300px;
+  }
 }
 
 .emailButton {
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 3rem;
   justify-content: center;
   align-items: center;
   border-radius: 1.25rem;
@@ -139,7 +176,7 @@
   &:hover {
     background-color: var(--background) !important;
     color: var(--heading);
-    border: 0.25px solid var(--paragraph);
+    border: 1px solid var(--border);
   }
 
   &:disabled,

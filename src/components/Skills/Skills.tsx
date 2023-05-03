@@ -38,7 +38,7 @@ const Skills = () => {
         </div>
         <div className={styles.gridContainer}>
           {sortedSkills.map((skill) => (
-            <div className={styles.skillContainer}>
+            <div key={skill.name} className={styles.skillContainer}>
               <div className={styles.skillImageContainer}>
                 <Image
                   src={`/icons/${skill.svg}.svg`}
@@ -72,7 +72,7 @@ const Skills = () => {
         </div>
         <div className={styles.gridContainer}>
           {software.map((skill) => (
-            <div className={styles.skillContainer}>
+            <div key={skill.name} className={styles.skillContainer}>
               <div className={styles.skillImageContainer}>
                 <Image
                   src={`/icons/${skill.svg}.svg`}
@@ -105,7 +105,7 @@ const Skills = () => {
         </div>
         <div className={styles.gridContainer}>
           {services.map((skill) => (
-            <div className={styles.skillContainer}>
+            <div key={skill.name} className={styles.skillContainer}>
               <div className={styles.skillImageContainer}>
                 <Image
                   src={`/icons/${skill.svg}.svg`}
@@ -138,7 +138,7 @@ const Skills = () => {
         </div>
         <div className={styles.gridContainer}>
           {libraries.map((skill) => (
-            <div className={styles.skillContainer}>
+            <div key={skill.name} className={styles.skillContainer}>
               <div className={styles.skillImageContainer}>
                 <Image
                   src={`/icons/${skill.svg}.svg`}

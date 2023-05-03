@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div id="contact" className={styles.mainFlexContainer}>
       <div className={styles.mainHeadingContainer}>
-        <p className={styles.mainParagraph}>Let's work together</p>
+        <p className={styles.mainParagraph}>Let&apos;s work together</p>
         <h2 className={styles.mainHeader}>Contact</h2>
       </div>
       <div className={styles.headingContainer}>
@@ -20,8 +20,8 @@ const Contact = () => {
           <p className={styles.headingHeader}>Shoot me a DM on LinkedIn</p>
           <Image
             src={`/icons/arrowRight.svg`}
-            height="25"
-            width="25"
+            height="20"
+            width="20"
             className={styles.icon}
             alt={"arrow right"}
           />

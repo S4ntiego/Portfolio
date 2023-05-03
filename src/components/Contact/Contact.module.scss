@@ -32,9 +32,8 @@
   display: flex;
   width: max-content;
   gap: 1rem;
+  height: 25px;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 
   &:hover .headingHeader {
     color: var(--blue);
@@ -74,15 +73,10 @@
   }
 }
 
-.iconContainer {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-}
-
 .icon {
   filter: invert(25%) sepia(92%) saturate(1470%) hue-rotate(211deg)
     brightness(100%) contrast(97%);
+  align-self: end;
 }
 
 .headingHeader {

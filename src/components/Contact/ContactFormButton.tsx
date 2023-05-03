@@ -18,8 +18,8 @@ const ContactFormButton = () => {
       <p className={styles.headingHeader}>Use Contact Form</p>
       <Image
         src={`/icons/arrowDown.svg`}
-        height="25"
-        width="25"
+        height="20"
+        width="20"
         className={styles.icon}
         alt={"arrow down"}
       />

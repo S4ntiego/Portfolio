@@ -34,8 +34,8 @@ const CopyEmailButton = () => {
       </p>
       <Image
         src={`/icons/copy.svg`}
-        height="25"
-        width="25"
+        height="20"
+        width="20"
         className={styles.icon}
         alt={"copy"}
       />

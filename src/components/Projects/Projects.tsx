@@ -247,13 +247,13 @@ const Projects = () => {
               <h3 className={styles.projectDescriptionHeader}>Natours</h3>
               <p className={styles.projectDescriptionParagraph}>
                 This website focuses on the aspect of styling with the use of
-                css "float", keyframes animation, scss/sass, mixins, and
-                responsiveness. It uses the BEM naming convention.
+                css &quot;float&quot;, keyframes animation, scss/sass, mixins,
+                and responsiveness. It uses the BEM naming convention.
               </p>
               <p className={styles.projectDescriptionParagraph}>
                 It is the first project that I have created strictly following
-                Jonas Schedtmann's course "Advanced CSS and Sass: Flexbox, Grid,
-                Animations and More!".
+                Jonas Schedtmann&apos;s course &quot;Advanced CSS and Sass:
+                Flexbox, Grid, Animations and More!&quot;.
               </p>
               <div className={styles.gridContainer}>
                 <Image
@@ -320,8 +320,8 @@ const Projects = () => {
               </p>
               <p className={styles.projectDescriptionParagraph}>
                 It is the second project that I have created strictly following
-                Jonas Schedtmann's course "Advanced CSS and Sass: Flexbox, Grid,
-                Animations and More!".
+                Jonas Schedtmann&apos;s course &quot;Advanced CSS and Sass:
+                Flexbox, Grid, Animations and More!&quot;.
               </p>
               <div className={styles.gridContainer}>
                 <Image

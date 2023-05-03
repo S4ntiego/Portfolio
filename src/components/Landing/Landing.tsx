@@ -18,7 +18,7 @@ const Landing = () => {
             <p className={styles.landingSecondaryHeadingText}>Cześć.</p>
           </div>
           <h1 className={styles.landingPrimaryHeading}>
-            My name is <span className={styles.name}>Adam Książek</span>, I'm a
+            My name is <span className={styles.name}>Adam Książek</span>, I am a
             full-stack JavaScript developer able to work all around the world.
           </h1>
           <p className={styles.landingParagraph1}>

@@ -11,7 +11,7 @@
   background-color: var(--background);
 
   @include respond(phone) {
-    height: 4rem;
+    height: 5rem;
   }
 }
 

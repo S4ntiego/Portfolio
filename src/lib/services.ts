@@ -1,6 +1,6 @@
 export const services = [
   {
-    name: "Amazon AWS S3",
+    name: "AWS S3",
     layer: "storage",
     svg: "aws",
   },
@@ -15,7 +15,7 @@ export const services = [
     svg: "heroku",
   },
   {
-    name: "Amazon Cloudfront",
+    name: "Cloudfront",
     layer: "cdn",
     svg: "cloudfront",
   },

@@ -9,6 +9,11 @@
   height: 100%;
   width: 100%;
   gap: 3rem;
+  align-items: center;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 
   @include respond(phone) {
     flex-direction: column;
@@ -21,11 +26,16 @@
   flex-direction: column;
   gap: 1.25rem;
   flex-basis: 60%;
+
+  @include respond(tab-port) {
+    width: 100%;
+    flex-basis: none;
+  }
 }
 
 .flexRightContainer {
   position: relative;
-  width: auto;
+  flex: 1;
   flex-basis: 40%;
   display: flex;
   flex-direction: column;
@@ -35,28 +45,52 @@
   border: 1px solid var(--border);
   border-radius: 1.25rem;
   padding: 0 1rem 1rem 1rem;
+  height: min-content;
 
   @include respond(tab-port) {
+    justify-content: start;
+    align-items: start;
+    flex-basis: none;
+    width: 100%;
+  }
+
+  @include respond(phone) {
     flex-direction: column;
-    width: auto;
-    height: 10rem;
+    width: 100%;
+    height: auto;
     aspect-ratio: 1/1;
   }
 }
 
 .imageContainer {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
-  aspect-ratio: 1/1;
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: min-content;
   overflow: hidden;
   border-radius: 1.25rem;
+  aspect-ratio: 3/4;
+  padding: 0;
+
+  @include respond(tab-port) {
+    aspect-ratio: 1/1;
+  }
+
+  @include respond(phone) {
+    aspect-ratio: 1/1;
+  }
 }
 
 .cvImage {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
     brightness(102%) contrast(102%);
-  object-fit: fill;
+  object-fit: cover;
+
+  @include respond(tab-port) {
+    filter: invert(64%) sepia(10%) saturate(446%) hue-rotate(167deg)
+      brightness(88%) contrast(89%);
+  }
 }
 
 .adam {
@@ -73,6 +107,11 @@
   letter-spacing: -2px;
 
   @include respond(tab-port) {
+    font-size: 2.25rem;
+    max-width: 700px;
+  }
+
+  @include respond(phone) {
     font-size: 2rem;
   }
 }
@@ -89,6 +128,11 @@
   font-weight: 400;
   letter-spacing: -0.5px;
   text-align: justify;
+
+  @include respond(tab-port) {
+    font-size: 1.125rem;
+    max-width: 700px;
+  }
 
   @include respond(phone) {
     font-size: 1rem;
@@ -249,4 +293,43 @@
     opacity: 0;
     top: 15px;
   }
+}
+
+/* GRID */
+
+.twelve {
+  width: 100%;
+}
+.eleven {
+  width: 91.53%;
+}
+.ten {
+  width: 83.06%;
+}
+.nine {
+  width: 74.6%;
+}
+.eight {
+  width: 66.13%;
+}
+.seven {
+  width: 57.66%;
+}
+.six {
+  width: 49.2%;
+}
+.five {
+  width: 40.73%;
+}
+.four {
+  width: 32.26%;
+}
+.three {
+  width: 23.8%;
+}
+.two {
+  width: 15.33%;
+}
+.one {
+  width: 6.866%;
 }

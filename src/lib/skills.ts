@@ -65,7 +65,7 @@ export const skills = [
     svg: "graphcms",
   },
   {
-    name: "Sass / SCSS",
+    name: "SCSS",
     layer: "Styling",
     svg: "sass",
   },

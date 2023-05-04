@@ -42,7 +42,8 @@ const Skills = () => {
               <div className={styles.skillImageContainer}>
                 <Image
                   src={`/icons/${skill.svg}.svg`}
-                  fill
+                  height={40}
+                  width={40}
                   className={styles.skillImage}
                   alt={skill.svg}
                 />
@@ -59,7 +60,6 @@ const Skills = () => {
           ))}
         </div>
       </div>
-
       <div className={styles.sectionContainer}>
         <div className={styles.sectionHeadingContainer}>
           <h2 className={styles.sectionHeading}>Software</h2>
@@ -76,7 +76,8 @@ const Skills = () => {
               <div className={styles.skillImageContainer}>
                 <Image
                   src={`/icons/${skill.svg}.svg`}
-                  fill
+                  height={50}
+                  width={50}
                   className={styles.skillImage}
                   alt={skill.svg}
                 />
@@ -109,7 +110,8 @@ const Skills = () => {
               <div className={styles.skillImageContainer}>
                 <Image
                   src={`/icons/${skill.svg}.svg`}
-                  fill
+                  height={50}
+                  width={50}
                   className={styles.skillImage}
                   alt={skill.svg}
                 />
@@ -142,7 +144,8 @@ const Skills = () => {
               <div className={styles.skillImageContainer}>
                 <Image
                   src={`/icons/${skill.svg}.svg`}
-                  fill
+                  height={50}
+                  width={50}
                   className={styles.skillImage}
                   alt={skill.svg}
                 />

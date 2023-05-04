@@ -190,7 +190,7 @@ const Projects = () => {
               className={styles.projectImageContainer}
             >
               <Image
-                src={`/quizander_landing.png`}
+                src={`/portfolio_landing.png`}
                 className={styles.projectImage}
                 alt={"quizander"}
                 fill
@@ -280,37 +280,43 @@ const Projects = () => {
               </div>
               <div className={styles.buttonsContainer}>
                 <a
-                  href="https://quizander-dqzb.vercel.app/"
-                  className={styles.projectAlternativeButton}
+                  href="https://natours-neon-eight.vercel.app/"
+                  className={styles.projectButton}
                 >
-                  Live
+                  <span className={styles.buttonText}>Live</span>
                 </a>
                 <a
-                  href="https://github.com/S4ntiego/Quizander"
+                  href="https://github.com/S4ntiego/Natours"
                   className={styles.projectAlternativeButton}
                 >
                   GitHub Repo
                 </a>
               </div>
             </div>
-            <div className={styles.projectImageContainer}>
+            <a
+              href="https://natours-neon-eight.vercel.app/"
+              className={styles.projectImageContainer}
+            >
               <Image
                 src={`/natours_landing.png`}
                 className={styles.projectImage}
                 alt={"liguify"}
                 fill
               />
-            </div>
+            </a>
           </div>
           <div className={styles.projectContainer}>
-            <div className={styles.projectImageContainer}>
+            <a
+              href="https://trillo-silk.vercel.app/"
+              className={styles.projectImageContainer}
+            >
               <Image
                 src={`/trillo.png`}
                 className={styles.projectImage}
                 alt={"trillo"}
                 fill
               />
-            </div>
+            </a>
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Trillo</h3>
               <p className={styles.projectDescriptionParagraph}>
@@ -348,13 +354,13 @@ const Projects = () => {
               </div>
               <div className={styles.buttonsContainer}>
                 <a
-                  href="https://quizander-dqzb.vercel.app/"
-                  className={styles.projectAlternativeButton}
+                  href="https://trillo-silk.vercel.app/"
+                  className={styles.projectButton}
                 >
-                  Live
+                  <span className={styles.buttonText}>Live</span>
                 </a>
                 <a
-                  href="https://github.com/S4ntiego/Quizander"
+                  href="https://github.com/S4ntiego/Trillo"
                   className={styles.projectAlternativeButton}
                 >
                   GitHub Repo

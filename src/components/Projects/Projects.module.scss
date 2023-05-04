@@ -42,7 +42,7 @@
 }
 
 .mainHeader {
-  font-size: 6rem;
+  font-size: 5rem;
   color: var(--heading);
   font-weight: 700;
   line-height: 0.9em;
@@ -53,7 +53,7 @@
   margin-bottom: 1rem;
 
   @include respond(phone) {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 0;
   }
 }
@@ -68,35 +68,7 @@
   text-transform: uppercase;
 
   @include respond(phone) {
-    font-size: 0.7rem;
-  }
-}
-
-.projectContainer {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  position: relative;
-  flex: none;
-  align-content: center;
-  align-items: center;
-  gap: 3rem;
-  height: min-content;
-  justify-content: center;
-  width: 100%;
-  outline: solid 1px var(--border);
-  border-radius: 1.25rem;
-  padding: 2rem;
-
-  @include respond(phone) {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    outline: none;
-    gap: 1rem;
-
-    &:nth-of-type(even) {
-      flex-direction: column-reverse;
-    }
+    font-size: 0.65rem;
   }
 }
 
@@ -180,21 +152,14 @@
   gap: 5rem;
 }
 
-.projectImagesContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  outline: 1px solid var(--border);
-  border-radius: 1.25rem;
-}
-
 .projectImageContainer {
   position: relative;
   aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 1.25rem;
+  outline: 1px solid var(--border);
 
-  @include respond(phone) {
+  @include respond(tab-land) {
     aspect-ratio: 1/1;
     width: 100%;
     height: auto;
@@ -212,6 +177,34 @@
   }
 }
 
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  position: relative;
+  flex: none;
+  align-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: min-content;
+  justify-content: center;
+  width: 100%;
+  outline: solid 1px var(--border);
+  border-radius: 1.25rem;
+  padding: 2rem;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    outline: none;
+    gap: 1rem;
+
+    &:nth-of-type(even) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -219,7 +212,7 @@
   padding: 2rem 0 2rem 0;
   max-width: 450px;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     gap: 0.5rem;
     padding: 0.5rem 0;
   }
@@ -234,6 +227,10 @@
   padding: 0.2rem;
   filter: brightness(0) saturate(100%) invert(61%) sepia(8%) saturate(520%)
     hue-rotate(167deg) brightness(92%) contrast(90%);
+
+  @include respond(phone) {
+    padding: 0.3rem;
+  }
 }
 
 .projectDescriptionContainer {
@@ -241,6 +238,7 @@
   flex-direction: column;
   flex: 1;
   gap: 1.25rem;
+  width: 100%;
 
   @include respond(phone) {
     gap: 1rem;
@@ -264,7 +262,12 @@
   text-align: justify;
   max-width: 450px;
 
+  @include respond(tab-land) {
+    max-width: none;
+  }
+
   @include respond(phone) {
     font-size: 1rem;
+    max-width: 500px;
   }
 }

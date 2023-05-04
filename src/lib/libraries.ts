@@ -10,12 +10,12 @@ export const libraries = [
     svg: "express",
   },
   {
-    name: "JSON Web Token",
+    name: "JWT",
     layer: "authentication",
     svg: "jwt",
   },
   {
-    name: "React Hook Form",
+    name: "Hook Form",
     layer: "forms",
     svg: "reactHookForm",
   },

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Navbar.module.scss";
 import { navbarConfig } from "@/config/navbar";
 import Image from "next/image";
+import Hamburger from "./Hamburger";
 
 const Navbar = () => {
   return (
@@ -23,6 +24,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className={styles.rightContainer}>
+          <Hamburger />
           <div className={styles.icons}>
             <a href="https://github.com/S4ntiego">
               <Image

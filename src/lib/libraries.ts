@@ -1,4 +1,10 @@
-export const libraries = [
+export interface Library {
+  name: string;
+  layer: string;
+  svg: string;
+}
+
+export const libraries: Library[] = [
   {
     name: "Bootstrap",
     layer: "styling",

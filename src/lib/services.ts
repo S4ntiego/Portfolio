@@ -1,4 +1,10 @@
-export const services = [
+export interface Service {
+  name: string;
+  layer: string;
+  svg: string;
+}
+
+export const services: Service[] = [
   {
     name: "AWS S3",
     layer: "storage",

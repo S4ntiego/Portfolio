@@ -1,4 +1,10 @@
-export const software = [
+export interface Software {
+  name: string;
+  layer: string;
+  svg: string;
+}
+
+export const software: Software[] = [
   {
     name: "Figma",
     layer: "design",

@@ -1,4 +1,10 @@
-export const skills = [
+export interface Skill {
+  name: string;
+  layer: string;
+  svg: string;
+}
+
+export const skills: Skill[] = [
   {
     name: "JavaScript",
     layer: "language",

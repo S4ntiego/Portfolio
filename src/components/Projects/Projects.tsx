@@ -15,7 +15,7 @@ const Projects = () => {
             <div className={styles.projectImageContainer}>
               <a href="https://quizander-dqzb.vercel.app/">
                 <Image
-                  src={`/quizander_landing.png`}
+                  src={`/quizander.jpg`}
                   className={styles.projectImage}
                   alt={"quizander"}
                   fill
@@ -168,7 +168,7 @@ const Projects = () => {
               </div>
               <div className={styles.buttonsContainer}>
                 <a
-                  href="https://github.com/S4ntiego/Quizander"
+                  href="https://github.com/S4ntiego/liguify"
                   className={styles.projectAlternativeButton}
                 >
                   GitHub Repo
@@ -177,7 +177,7 @@ const Projects = () => {
             </div>
             <div className={styles.projectImageContainer}>
               <Image
-                src={`/liguify_main.png`}
+                src={`/liguify.jpg`}
                 className={styles.projectImage}
                 alt={"liguify"}
                 fill
@@ -190,7 +190,7 @@ const Projects = () => {
               className={styles.projectImageContainer}
             >
               <Image
-                src={`/portfolio_landing.png`}
+                src={`/portfolio.jpg`}
                 className={styles.projectImage}
                 alt={"quizander"}
                 fill
@@ -298,7 +298,7 @@ const Projects = () => {
               className={styles.projectImageContainer}
             >
               <Image
-                src={`/natours_landing.png`}
+                src={`/natours.jpg`}
                 className={styles.projectImage}
                 alt={"liguify"}
                 fill
@@ -311,7 +311,7 @@ const Projects = () => {
               className={styles.projectImageContainer}
             >
               <Image
-                src={`/trillo.png`}
+                src={`/trillo.jpg`}
                 className={styles.projectImage}
                 alt={"trillo"}
                 fill

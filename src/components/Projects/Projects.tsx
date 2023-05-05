@@ -152,7 +152,7 @@ const Projects = () => {
                   alt={"express"}
                 />
                 <Image
-                  src={`/icons/javaScript.svg`}
+                  src={`/icons/javascript.svg`}
                   height="50"
                   width="50"
                   className={styles.skillImage}

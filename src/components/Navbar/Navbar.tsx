@@ -29,8 +29,8 @@ const Navbar = () => {
             <a href="https://github.com/S4ntiego">
               <Image
                 src={`/icons/github.svg`}
-                height="35"
-                width="35"
+                height="30"
+                width="30"
                 className={styles.icon}
                 alt={"github"}
               />
@@ -38,8 +38,8 @@ const Navbar = () => {
             <a href="https://www.linkedin.com/in/adam-ksi%C4%85%C5%BCek-6538141a1/">
               <Image
                 src={`/icons/linkedin.svg`}
-                height="35"
-                width="35"
+                height="30"
+                width="30"
                 className={styles.icon}
                 alt={"linkedin"}
               />

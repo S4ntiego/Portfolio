@@ -16,6 +16,19 @@ const familjen = Familjen_Grotesk({
 export const metadata = {
   title: "Adam Ksiazek Portfolio",
   description: "Portfolio website created by Adam Ksiazek",
+  keywords: ["Next.js", "React", "Adam Ksiazek", "CSS", "TypeScript"],
+  authors: [
+    {
+      name: "Adam Ksiazek",
+      url: "https://github.com/S4ntiego",
+    },
+  ],
+  creator: "Adam Ksiazek",
+  icons: {
+    icon: "/favicon-32x32.png",
+    shortcut: "/favicon-16x16.png",
+    apple: "apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -25,6 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={familjen.variable + " " + inter.variable} lang="en">
+      <head />
       <body>
         <div>
           <Navbar />

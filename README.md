@@ -1,6 +1,10 @@
+
+<img src="https://user-images.githubusercontent.com/62663595/236615718-6c00e0a9-a619-4b89-ac0d-16643ca9d15b.jpg" height="500px" width="500px"/>
+
+
 # Portfolio
 
-This is a simple portfolio website created with CSS Modules and CSS to show my tech stack, completed projects, and courses.
+This is a simple portfolio website created with CSS Modules and SCSS to show my tech stack, completed projects, and courses.
 
 # Libraries/Technology used in the project:
 
@@ -36,3 +40,4 @@ yarn dev
 # or
 pnpm dev
 ```
+

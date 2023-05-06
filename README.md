@@ -1,6 +1,5 @@
 
-<img src="https://user-images.githubusercontent.com/62663595/236615718-6c00e0a9-a619-4b89-ac0d-16643ca9d15b.jpg" width="50%"/>
-
+<img src="https://user-images.githubusercontent.com/62663595/236621475-c9f44342-d1bb-4d2b-9929-1dfced448e26.jpg"/>
 
 # Portfolio
 

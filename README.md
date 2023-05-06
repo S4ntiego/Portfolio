@@ -1,4 +1,5 @@
 # Portfolio
+
 This is a simple portfolio website created with CSS Modules and CSS to show my tech stack, completed projects, and courses.
 
 # Libraries/Technology used in the project:
@@ -24,7 +25,6 @@ The website has the following features:
 - SVG icons
 - Intro / Stack / Projects / Courses / Contact sections
 
-
 # Running locally
 
 To run the project, you need to run the development server by typing in your IDE:
@@ -36,5 +36,3 @@ yarn dev
 # or
 pnpm dev
 ```
-
-

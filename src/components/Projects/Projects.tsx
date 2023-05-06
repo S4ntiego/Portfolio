@@ -368,6 +368,87 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          <div className={styles.projectContainer}>
+            <div className={styles.projectDescriptionContainer}>
+              <h3 className={styles.projectDescriptionHeader}>Memories</h3>
+              <p className={styles.projectDescriptionParagraph}>
+                Simple fullstack social media app that allows user to post
+                memories from the interesting events.
+              </p>
+              <p className={styles.projectDescriptionParagraph}>
+                This project is strictly following JavaScript Mystery course
+                &quot;Full Stack MERN Application&quot; available on the YouTube
+                platform.
+              </p>
+              <div className={styles.gridContainer}>
+                <Image
+                  src={`/icons/react.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"react"}
+                />
+                <Image
+                  src={`/icons/redux.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"redux"}
+                />
+                <Image
+                  src={`/icons/javascript.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"javascript"}
+                />
+                <Image
+                  src={`/icons/nodejs.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"nodejs"}
+                />
+                <Image
+                  src={`/icons/express.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"express"}
+                />
+                <Image
+                  src={`/icons/mongodb.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"mongodb"}
+                />
+                <Image
+                  src={`/icons/mui.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"mui"}
+                />
+              </div>
+              <div className={styles.buttonsContainer}>
+                <a
+                  href="https://github.com/S4ntiego/Memories"
+                  className={styles.projectAlternativeButton}
+                >
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+            <div className={styles.projectImageContainer}>
+              <Image
+                src={`/memories.jpg`}
+                className={styles.projectImage}
+                alt={"memories"}
+                fill
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

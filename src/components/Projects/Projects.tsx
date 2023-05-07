@@ -325,7 +325,7 @@ const Projects = () => {
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Trillo</h3>
               <p className={styles.projectDescriptionParagraph}>
-                "This website focuses on styling aspects using flexbox, keyframe
+                This website focuses on styling aspects using flexbox, keyframe
                 animations, SCSS/Sass, mixins, and responsiveness, and it
                 follows the BEM naming convention.
               </p>
@@ -381,10 +381,10 @@ const Projects = () => {
                 to post memories from interesting events.
               </p>
               <p className={styles.projectDescriptionParagraph}>
-                The project strictly follows the JavaScript Mastery course 'Full
-                Stack MERN Application,' which is available on the YouTube
-                platform. I would like to emphasize that I am not proficient in
-                using Material UI.
+                The project strictly follows the JavaScript Mastery course
+                &quot;Full Stack MERN Application&quot;, which is available on
+                the YouTube platform. I would like to emphasize that I am not
+                proficient in using Material UI.
               </p>
               <div className={styles.gridContainer}>
                 <Image

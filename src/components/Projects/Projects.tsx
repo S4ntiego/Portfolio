@@ -175,14 +175,17 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className={styles.projectImageContainer}>
+            <a
+              href="https://github.com/S4ntiego/liguify"
+              className={styles.projectImageContainer}
+            >
               <Image
                 src={`/liguify.jpg`}
                 className={styles.projectImage}
                 alt={"liguify"}
                 fill
               />
-            </div>
+            </a>
           </div>
           <div className={styles.projectContainer}>
             <a
@@ -440,14 +443,17 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className={styles.projectImageContainer}>
+            <a
+              href="https://github.com/S4ntiego/Memories"
+              className={styles.projectImageContainer}
+            >
               <Image
                 src={`/memories.jpg`}
                 className={styles.projectImage}
                 alt={"memories"}
                 fill
               />
-            </div>
+            </a>
           </div>
         </div>
       </div>

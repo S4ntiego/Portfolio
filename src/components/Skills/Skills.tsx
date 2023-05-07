@@ -64,10 +64,10 @@ const Skills = () => {
         <div className={styles.sectionHeadingContainer}>
           <h2 className={styles.sectionHeading}>Software</h2>
           <p className={styles.sectionParagraph}>
-            While exploring UI and UX aspects of the web, I got familiar with
-            one of the most popular design tools in the industry - Figma and
-            Adobe Photoshop. With my Investment Banking experience, I am also
-            proficient in Microsoft Office.
+            While exploring UI and UX aspects of the web, I became familiar with
+            two of the most popular design tools in the industry - Figma and
+            Adobe Photoshop. Additionally, with my experience in Investment
+            Banking, I am also proficient in using Microsoft Office.
           </p>
         </div>
         <div className={styles.gridContainer}>
@@ -132,10 +132,11 @@ const Skills = () => {
         <div className={styles.sectionHeadingContainer}>
           <h2 className={styles.sectionHeading}>Additional Libraries</h2>
           <p className={styles.sectionParagraph}>
-            To gain a smoother developer and user experience, I am using
+            To achieve a smoother developer and user experience, I am using
             external libraries that are widely recognized and appreciated by the
-            npm community. My knowledge of testing using Jest library is at a
-            basic level.
+            npm community. Although I have only a very basic understanding of
+            testing using the Jest library, I am continuously improving my
+            skills in this area.
           </p>
         </div>
         <div className={styles.gridContainer}>

@@ -103,16 +103,18 @@ const Projects = () => {
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Liguify</h3>
               <p className={styles.projectDescriptionParagraph}>
-                Full-stack website with Teamfight Tactics statistics based on my
-                own analysis of data gathered from Riot Games API. Live version
-                is not available, as the project was prepared during the
-                Dragonlands set. Nevertheless, GitHub repository contains almost
-                all the queries, tables, frontend and backend code.
+                This is a full-stack website that displays Teamfight Tactics
+                statistics based on my analysis of data gathered from Riot Games
+                API. A live version is not available, as the project was
+                prepared during the Dragonlands set. Nevertheless, the GitHub
+                repository contains almost all the queries, tables, frontend,
+                and backend code.
               </p>
               <p className={styles.projectDescriptionParagraph}>
-                Complex SQL queries and table relationships, Knex builder,
-                temporary tables, search, and filters. Gathered and analysed
-                data for over 90,000 team compositions and 11,000 matches.
+                The project involves complex SQL queries and table
+                relationships, Knex builder, temporary tables, search, and
+                filters. I gathered and analyzed data for over 90,000 team
+                compositions and 11,000 matches.
               </p>
               <div className={styles.gridContainer}>
                 <Image
@@ -249,9 +251,9 @@ const Projects = () => {
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Natours</h3>
               <p className={styles.projectDescriptionParagraph}>
-                This website focuses on the aspect of styling with the use of
-                css &quot;float&quot;, keyframes animation, scss/sass, mixins,
-                and responsiveness. It uses the BEM naming convention.
+                This website focuses on styling aspects using CSS
+                &apos;float&apos;, keyframe animations, SCSS/Sass, mixins, and
+                responsiveness, and it follows the BEM naming convention.
               </p>
               <p className={styles.projectDescriptionParagraph}>
                 It is the first project that I have created strictly following
@@ -323,14 +325,14 @@ const Projects = () => {
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Trillo</h3>
               <p className={styles.projectDescriptionParagraph}>
-                This website focuses on the aspect of styling with the use of
-                flexbox, keyframes animation, scss/sass, mixins, and
-                responsiveness. It uses the BEM naming convention.
+                "This website focuses on styling aspects using flexbox, keyframe
+                animations, SCSS/Sass, mixins, and responsiveness, and it
+                follows the BEM naming convention.
               </p>
               <p className={styles.projectDescriptionParagraph}>
                 It is the second project that I have created strictly following
-                Jonas Schedtmann&apos;s course &quot;Advanced CSS and Sass:
-                Flexbox, Grid, Animations and More!&quot;.
+                Jonas Schmedtmann&apos;s course &quot;Advanced CSS and Sass:
+                Flexbox, Grid, Animations, and More!&quot;.
               </p>
               <div className={styles.gridContainer}>
                 <Image
@@ -375,13 +377,14 @@ const Projects = () => {
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Memories</h3>
               <p className={styles.projectDescriptionParagraph}>
-                Simple fullstack social media app that allows user to post
-                memories from the interesting events.
+                This is a simple full-stack social media app that allows users
+                to post memories from interesting events.
               </p>
               <p className={styles.projectDescriptionParagraph}>
-                This project is strictly following JavaScript Mystery course
-                &quot;Full Stack MERN Application&quot; available on the YouTube
-                platform.
+                The project strictly follows the JavaScript Mastery course 'Full
+                Stack MERN Application,' which is available on the YouTube
+                platform. I would like to emphasize that I am not proficient in
+                using Material UI.
               </p>
               <div className={styles.gridContainer}>
                 <Image

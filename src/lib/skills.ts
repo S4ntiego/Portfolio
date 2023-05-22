@@ -85,4 +85,9 @@ export const skills: Skill[] = [
     layer: "ORM",
     svg: "prisma",
   },
+  {
+    name: "Markdown/MDX",
+    layer: "language",
+    svg: "mdx",
+  },
 ];

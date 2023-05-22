@@ -191,16 +191,76 @@ const Projects = () => {
           </div>
           <div className={styles.projectContainer}>
             <a
-              href="https://github.com/S4ntiego/Portfolio"
+              href="https://blog-sigma-seven-44.vercel.app/"
               className={styles.projectImageContainer}
             >
               <Image
-                src={`/portfolio.jpg`}
+                src={`/mdxblog.png`}
                 className={styles.projectImage}
-                alt={"quizander"}
+                alt={"blog"}
                 fill
               />
             </a>
+            <div className={styles.projectDescriptionContainer}>
+              <h3 className={styles.projectDescriptionHeader}>Blog</h3>
+              <p className={styles.projectDescriptionParagraph}>
+                My personal space on the internet created with Next.js,
+                React.js, TypeScript, Markdown, MDX, and Tailwind CSS.
+              </p>
+              <div className={styles.gridContainer}>
+                <Image
+                  src={`/icons/nextjs.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"nextjs"}
+                />
+                <Image
+                  src={`/icons/react.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"css"}
+                />
+                <Image
+                  src={`/icons/typescript.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"typescript"}
+                />
+                <Image
+                  src={`/icons/mdx.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"mdx"}
+                />
+                <Image
+                  src={`/icons/tailwindcss.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"tailwind"}
+                />
+              </div>
+              <div className={styles.buttonsContainer}>
+                <a
+                  href="https://blog-sigma-seven-44.vercel.app/"
+                  className={styles.projectButton}
+                >
+                  <span className={styles.buttonText}>Live</span>
+                </a>
+                <a
+                  href="https://github.com/S4ntiego/Blog"
+                  className={styles.projectAlternativeButton}
+                >
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.projectContainer}>
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Portfolio</h3>
               <p className={styles.projectDescriptionParagraph}>
@@ -246,8 +306,30 @@ const Projects = () => {
                 </a>
               </div>
             </div>
+            <a
+              href="https://github.com/S4ntiego/Portfolio"
+              className={styles.projectImageContainer}
+            >
+              <Image
+                src={`/portfolio.jpg`}
+                className={styles.projectImage}
+                alt={"quizander"}
+                fill
+              />
+            </a>
           </div>
           <div className={styles.projectContainer}>
+            <a
+              href="https://natours-neon-eight.vercel.app/"
+              className={styles.projectImageContainer}
+            >
+              <Image
+                src={`/natours.jpg`}
+                className={styles.projectImage}
+                alt={"liguify"}
+                fill
+              />
+            </a>
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Natours</h3>
               <p className={styles.projectDescriptionParagraph}>
@@ -298,30 +380,8 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <a
-              href="https://natours-neon-eight.vercel.app/"
-              className={styles.projectImageContainer}
-            >
-              <Image
-                src={`/natours.jpg`}
-                className={styles.projectImage}
-                alt={"liguify"}
-                fill
-              />
-            </a>
           </div>
           <div className={styles.projectContainer}>
-            <a
-              href="https://trillo-silk.vercel.app/"
-              className={styles.projectImageContainer}
-            >
-              <Image
-                src={`/trillo.jpg`}
-                className={styles.projectImage}
-                alt={"trillo"}
-                fill
-              />
-            </a>
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Trillo</h3>
               <p className={styles.projectDescriptionParagraph}>
@@ -372,8 +432,30 @@ const Projects = () => {
                 </a>
               </div>
             </div>
+            <a
+              href="https://trillo-silk.vercel.app/"
+              className={styles.projectImageContainer}
+            >
+              <Image
+                src={`/trillo.jpg`}
+                className={styles.projectImage}
+                alt={"trillo"}
+                fill
+              />
+            </a>
           </div>
           <div className={styles.projectContainer}>
+            <a
+              href="https://github.com/S4ntiego/Memories"
+              className={styles.projectImageContainer}
+            >
+              <Image
+                src={`/memories.jpg`}
+                className={styles.projectImage}
+                alt={"memories"}
+                fill
+              />
+            </a>
             <div className={styles.projectDescriptionContainer}>
               <h3 className={styles.projectDescriptionHeader}>Memories</h3>
               <p className={styles.projectDescriptionParagraph}>
@@ -446,17 +528,6 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <a
-              href="https://github.com/S4ntiego/Memories"
-              className={styles.projectImageContainer}
-            >
-              <Image
-                src={`/memories.jpg`}
-                className={styles.projectImage}
-                alt={"memories"}
-                fill
-              />
-            </a>
           </div>
         </div>
       </div>

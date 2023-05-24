@@ -22,7 +22,7 @@ export const SkillCard: React.FC<PropsWithChildren> = ({ children }) => {
     >
       <div className="pointer-events-none">
         <motion.div
-          className="absolute inset-0 z-10 opacity-100 bg-[#0065fa]/10 group-hover:opacity-75 "
+          className="absolute hidden md:flex inset-0 z-10 opacity-100 bg-[#0065fa]/10 group-hover:opacity-75 "
           style={style}
         />
       </div>

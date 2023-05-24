@@ -5,6 +5,7 @@ import { software } from "@/lib/software";
 import { services } from "@/lib/services";
 import { libraries } from "@/lib/libraries";
 import Image from "next/image";
+import { SkillCard } from "./SkillCard";
 
 const sortedSkills = skills.sort((a, b) => {
   let fa = a.name.toLowerCase(),
@@ -36,27 +37,30 @@ const Skills = () => {
             involve TypeScript. Always learning and open to new solutions.
           </p>
         </div>
+
         <div className={styles.gridContainer}>
           {sortedSkills.map((skill) => (
-            <div key={skill.name} className={styles.skillContainer}>
-              <div className={styles.skillImageContainer}>
-                <Image
-                  src={`/icons/${skill.svg}.svg`}
-                  height={40}
-                  width={40}
-                  className={styles.skillImage}
-                  alt={skill.svg}
-                />
-              </div>
-              <div className={styles.skillDescriptionContainer}>
-                <div className={styles.skillLayerContainer}>
-                  <p className={styles.skillLayer}>{skill.layer}</p>
+            <SkillCard key={skill.name}>
+              <div className={styles.skillContainer}>
+                <div className={styles.skillImageContainer}>
+                  <Image
+                    src={`/icons/${skill.svg}.svg`}
+                    height={40}
+                    width={40}
+                    className={styles.skillImage}
+                    alt={skill.svg}
+                  />
                 </div>
-                <div className={styles.skillNameContainer}>
-                  <p className={styles.skillName}>{skill.name}</p>
+                <div className={styles.skillDescriptionContainer}>
+                  <div className={styles.skillLayerContainer}>
+                    <p className={styles.skillLayer}>{skill.layer}</p>
+                  </div>
+                  <div className={styles.skillNameContainer}>
+                    <p className={styles.skillName}>{skill.name}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </SkillCard>
           ))}
         </div>
       </div>

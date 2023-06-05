@@ -55,7 +55,7 @@ const Landing = () => {
             />
           </div>
           <a
-            href="/Adam-Ksiazek-CV.pdf"
+            href="/Adam_Ksiazek_CV.pdf"
             download
             className={styles.downloadButton}
           >

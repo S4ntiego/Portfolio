@@ -90,4 +90,9 @@ export const skills: Skill[] = [
     layer: "language",
     svg: "mdx",
   },
+  {
+    name: "Python",
+    layer: "language",
+    svg: "python",
+  },
 ];

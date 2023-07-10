@@ -19,7 +19,8 @@ const Landing = () => {
           </div>
           <h1 className={styles.landingPrimaryHeading}>
             My name is <span className={styles.name}>Adam Książek</span>, I am a
-            full-stack JavaScript developer able to work all around the world.
+            full-stack JavaScript developer & data analyst able to work all
+            around the world.
           </h1>
           <p className={styles.landingParagraph1}>
             I was born in Poland and studied finance at the University of Warsaw

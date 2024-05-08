@@ -41,4 +41,9 @@ export const software: Software[] = [
     layer: "presentations",
     svg: "powerpoint",
   },
+  {
+    name: "Power BI",
+    layer: "visualization",
+    svg: "powerbi"
+  }
 ];

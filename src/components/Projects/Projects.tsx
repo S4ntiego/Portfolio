@@ -10,6 +10,80 @@ const Projects = () => {
           <p className={styles.mainParagraph}>My latest side projects</p>
           <h2 className={styles.mainHeader}>Projects</h2>
         </div>
+        <div className={styles.projectContainer}>
+            <div className={styles.projectDescriptionContainer}>
+              <h3 className={styles.projectDescriptionHeader}>Dataspat</h3>
+              <p className={styles.projectDescriptionParagraph}>
+                Project that combines JavaScript and Python. 
+
+                Xbox Game Pass games repository with extensive filtering system combined with scores from MetaCritic and HowLongToBeat.
+
+                Data scrapped with Python (Beautifulsoup).
+              </p>
+              <div className={styles.gridContainer}>
+                <Image
+                  src={`/icons/nextjs.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"nextjs"}
+                />
+                 <Image
+                  src={`/icons/python.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"python"}
+                />
+                <Image
+                  src={`/icons/typescript.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"typescript"}
+                />
+                  <Image
+                  src={`/icons/tailwindcss.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"tailwindcss"}
+                />
+                <Image
+                  src={`/icons/json.svg`}
+                  height="50"
+                  width="50"
+                  className={styles.skillImage}
+                  alt={"zustand"}
+                />
+              </div>
+              <div className={styles.buttonsContainer}>
+                <a
+                  href="https://dataspat.vercel.app/"
+                  className={styles.projectButton}
+                >
+                  <span className={styles.buttonText}>Live</span>
+                </a>
+                <a
+                  href="https://github.com/S4ntiego/Dataspat"
+                  className={styles.projectAlternativeButton}
+                >
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+            <a
+              href="https://github.com/S4ntiego/dataspat"
+              className={styles.projectImageContainer}
+            >
+              <Image
+                src={`/dataspat.jpg`}
+                className={styles.projectImage}
+                alt={"dataspat"}
+                fill
+              />
+            </a>
+          </div>
         <div className={styles.projectsContainer}>
           <div className={styles.projectContainer}>
             <div className={styles.projectImageContainer}>
@@ -23,6 +97,9 @@ const Projects = () => {
               </a>
             </div>
             <div className={styles.projectDescriptionContainer}>
+            <p className={styles.projectDescriptionParagraphWarning}>
+                BACKEND IS CURRENTLY OFFLINE
+              </p>
               <h3 className={styles.projectDescriptionHeader}>Quizander</h3>
               <p className={styles.projectDescriptionParagraph}>
                 Full-stack Harry Potter universe based trivia website.

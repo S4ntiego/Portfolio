@@ -271,3 +271,9 @@
     max-width: 500px;
   }
 }
+
+.projectDescriptionParagraphWarning {
+  @extend .projectDescriptionParagraph;
+  color: red;
+  font-size: 1rem;
+}

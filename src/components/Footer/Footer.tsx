@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={styles.outerContainer}>
       <div className={styles.footerContainer}>
         <p className={styles.footerDescription}>
-          Created for humans, ducks and Renekton mains in 2023 by{" "}
+          Created for humans, ducks and Renekton mains in 2024 by{" "}
           <a
             href="https://www.linkedin.com/in/adam-ksi%C4%85%C5%BCek-6538141a1/"
             className={styles.name}
